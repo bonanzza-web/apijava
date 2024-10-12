@@ -11,9 +11,10 @@ def data():
     return jsonify(data="Here is some data")
 
 @app.route('/user/<username>')
-def get_user(username:
+def get_user(username):
     query = f"SELECT * FROM users WHERE username = '{username}'"
     return query
+    break
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
