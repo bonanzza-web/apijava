@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                echo 'Now is test code'
+                echo 'Now is test code fuck'
             }
         }
         stage('Deploy to prod') {
