@@ -15,7 +15,6 @@ def get_user(username):
     query = f"SELECT * FROM users WHERE username = '{username}'"
     return query
 
-print("test")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
