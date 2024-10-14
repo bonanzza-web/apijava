@@ -12,7 +12,7 @@ pipeline {
         stage("Quality Gate") {
             steps {
                 // Этот шаг ожидает завершения анализа и возвращает статус Quality Gate
-                timeout(time: 10, unit: 'MINUTES') { 
+                timeout(time: 2, unit: 'MINUTES') { 
                     script {
                         def qg = waitForQualityGate()
                         if (qg.status != 'OK') {
@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Testing') {
             steps {
-                echo 'Now is test code fuck'
+                echo 'Now is test code'
             }
         }
         stage('Deploy to prod') {
