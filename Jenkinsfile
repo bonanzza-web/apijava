@@ -10,7 +10,6 @@ pipeline {
         stage('Testing') {
             steps {
                 echo 'Now is test code'
-                sh 'cat hui.hui'
             }
         }
         stage('Deploy to prod') {
