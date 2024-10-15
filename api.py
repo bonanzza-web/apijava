@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 
 app = Flask(__name__)
-app.config['WTF_CSRF_ENABLED'] = False
+app.config['WTF_CSRF_ENABLED'] = True
 
 @app.route('/')
 def home():
